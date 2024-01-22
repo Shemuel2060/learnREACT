@@ -1,13 +1,38 @@
-body {
+/* Reset default margin and padding for all elements */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Set base font size and line height */
+html {
+  font-size: 16px; /* Adjust as needed */
+  line-height: 1.5;
 }
+
+/* Improve text rendering and legibility */
+body {
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333; /* Set default text color */
+  
+}
+
+/* Remove list styles for ul and ol */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default styles for links */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+/* Add a box-sizing reset for consistent sizing */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
