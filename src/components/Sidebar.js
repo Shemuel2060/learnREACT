@@ -11,8 +11,10 @@ function Sidebar(props){
         marginTop:"20px"
     }
     return (
-        <div style={asideStyles}>
+        <div style={asideStyles} onMouseEnter=
+        {props.entered}>
             <h1>{props.contact}</h1>
+   
         </div>
     )
 }
